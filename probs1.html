@@ -1,0 +1,1566 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+/*
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+
+*/
+
+body {
+padding-right: 1px;
+padding-left:  1px;
+
+/* padding-right: .5em;
+padding-left: .5em; */
+
+
+/* max-width: 960px; */
+margin-right: auto;
+margin-left: auto;
+
+}
+
+p{
+font-family: "Times New Roman", "Bookman Old Style", "Sans-Serif";
+font-size: 100%;
+
+margin-top: 0em;
+margin-bottom: .5em;
+
+}
+
+.description p{
+    margin-left: 1em;
+    margin-right:1em;
+
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+
+}
+
+.bsclst{
+margin-left:2em;
+margin-right:.25em;
+}
+
+.bnr{
+font-family: "Verdana", "Arail", "Sans-Serif";
+font-size: 150%;
+font-weight: 700;
+font-style: italic;
+margin-left: 0;
+margin-top: 0em;
+position:relative;
+/* border:1px solid red; */
+}
+
+.bnr a:link{
+color: black;
+text-decoration:none;
+}
+
+.bnr a:visited{
+color: black;
+text-decoration:none;
+}
+
+.hb{
+/* border: 1px solid black; */
+position: absolute;
+right:0;
+font-family: "Verdana", "Arail", "Sans-Serif";
+font-weight: 700;
+font-style: normal;
+display:inline;
+font-size:75%;
+
+}
+
+#snav .hb{
+font-size:150%;
+/* top:-.40em; */
+}
+
+.hb a:link{
+color: black;
+text-decoration:none;
+}
+
+.hb a:visited{
+color: black;
+text-decoration:none;
+}
+
+
+h1{
+font-family: "Verdana", "Arail", "Sans-Serif";
+font-size: 150%;
+font-weight: 700;
+margin-top: 0em;
+}
+
+
+
+h2 {
+font-family: "Verdana", "Arail", "Sans-Serif";
+font-size: 150%;
+font-weight: 700;
+margin-top: 0em;
+/*border-left: 1px dotted;border-right: 1px dotted;border-top: 1px dotted;border-bottom: 1px dotted;
+margin-height: 22%;*/
+
+}
+
+
+
+h3 {
+font-family: "Verdana", "Arail", "Sans-Serif";
+font-size: 115%;
+font-weight: 700;
+margin-top: 0em;
+}
+
+caption{
+font-family: "Verdana", "Arail", "Sans-Serif";
+font-size: 115%;
+font-weight: 700;
+margin-bottom:.25em;
+}
+
+table{
+/* font-size: 9.0px;  */
+border-collapse: collapse;
+border:1px solid gray;
+ width:100%;      
+}
+
+td{
+border: 1px solid gray;
+text-align:center;
+padding-top: 5px;
+padding-bottom: 5px; 
+padding-left: 0px;
+padding-right: 0px;
+/* height:27px; */
+}
+
+.tblteam{
+/* height: 22px;  */
+text-align:left;
+padding-left:1px;
+}
+
+th{
+border:1px solid gray;
+font-family: "Verdana", "Arail", "Sans-Serif";
+font-weight: 700;
+text-align: center;background: #D2D2D2;
+padding:0px;
+}
+
+ul{
+padding-left:1.25rem;
+}
+
+
+nav ul{
+list-style-type: none;
+/* margin: 0px; */
+padding: 0;
+/* left: 0px; */
+/* border:1px solid black; */
+padding-left:.25rem;
+}
+
+nav li{
+/* left: 0px; */
+/* margin-left:0px; */
+/* border:1px solid red; */
+
+/*height: 26px; */
+
+margin-bottom: 8px;
+
+}
+
+.libreak{
+/*height: 52px;*/
+margin-bottom: 28px;
+}
+
+.wide{
+display:none;
+}
+
+.wkinfo{
+margin-left:auto;
+margin-right:auto;
+text-align: center;
+}
+
+.flxbx1{
+/* display:-ms-flex; */
+display:-webkit-flex;
+display:flex; 
+
+
+-ms-justify-content: space-between;
+-webkit-justify-content: space-between; 
+justify-content: space-between;
+}
+
+.flxbx2{
+/* display:-ms-flex; */
+display:-webkit-flex;
+display:flex;
+
+/* -ms-flex-wrap: wrap; */
+-webkit-flex-wrap: wrap;
+flex-wrap: wrap;
+
+margin:0px;
+padding:1px;
+border:1px solid gray;
+
+width:auto;
+}
+
+
+
+.conflst{
+border: none;
+list-style: none;
+
+
+/* display:-ms-flex; */
+display:-webkit-flex;
+display:flex;
+
+/* -ms-flex-wrap: wrap; */
+-webkit-flex-wrap: wrap;
+flex-wrap: wrap;
+
+margin:0;
+padding:0;
+
+
+/* margin: 0px;
+padding: .2%;
+left: 0px; */
+
+width:100%;
+
+
+}
+
+
+.conflst li{
+
+-webkit-flex-grow:1;
+-webkit-flex-shrink:1;
+-webkit-flex-basis:45%;
+
+flex-grow:1;
+flex-shrink:1;
+flex-basis:45%;
+
+border:1px solid gray;
+margin:1px;
+
+padding: .25em;
+text-align:center;
+
+
+}
+
+ img{
+border: none;
+max-width: 100%;
+max-height: auto;
+
+  }
+
+.description{
+margin-bottom:1em;
+padding-left:.25em;
+}
+
+
+header{
+padding-left:.25em;
+}
+
+nav{
+
+
+margin:0px;
+padding: .25em;
+
+/* margin:1px;
+padding:.5em; */
+
+font-family: "Verdana", "Arail", "Sans-Serif";
+font-size: 100%;
+/* line-height: 170%; /* 165 not big enough */ 
+border:1px solid gray;
+
+
+-webkit-order:2;
+-webkit-flex-grow:1;
+-webkit-flex-shrink:1;
+-webkit-flex-basis:100%;
+
+order:2;
+flex-grow:1;
+flex-shrink:1;
+flex-basis:100%;
+}
+
+.mncntnt{
+margin-bottom:1px;
+padding: 1px;
+padding-top:.5em;
+
+/* margin:1px;
+padding:.25em; */
+
+-webkit-order:1;
+-webkit-flex-grow:1;
+-webkit-flex-shrink:1;
+-webkit-flex-basis:100%;
+
+order:1;
+flex-grow:1;
+flex-shrink:1;
+flex-basis:100%;
+
+border: 1px solid gray;
+}
+
+/*
+.bscp{
+font-family: "Times New Roman", "Bookman Old Style", "Sans-serif";font-size: 100%;
+margin-left: 2em;
+}
+
+..bsclst{
+margin-left: 2em;
+
+}
+*/
+
+
+.breadcrumbs{
+font-family: "Verdana", "Arail", "Sans-Serif";
+font-size:75%;
+font-weight: 400;
+/* white-space: nowrap; */
+line-height: 200%;
+ 
+}
+
+.breadcrumbs a{
+color: #969696;
+}
+
+.datetime{
+font-family: "Verdana", "Arail", "Sans-Serif";
+font-size:75%;
+font-weight: 400;
+color: #969696;
+line-height: 200%;
+}
+
+.grayed{
+color: #969696;
+}
+
+
+/* .leftpane{
+font-family: "Verdana", "Arail", "Serif";font-size: 75%;padding-left: .5em;padding-top: .5em;
+} */
+
+
+/* .trheader{
+font-family: "Verdana", "Arail", "Serif";font-weight: 700;text-align: center;background: #D2D2D2;
+
+} */
+
+/* Active League - Coming Soon - Inactive leagues */
+/* .AL{
+font-family: "Verdana", "Arail";
+font-size: 85%;
+font-weight: 700;
+margin-bottom: .25em;
+} */
+
+ 
+ 
+footer{
+margin-top:1em;
+font-size: 75%;
+text-align: center;
+}
+
+.gr_winner{
+background: #D2D2D2;
+}
+
+.gr_loser{
+
+
+}
+
+.gr_notplayed{
+
+}
+
+.makebold{
+font-weight: 700;
+}
+
+.notes{
+font-family: "Times New Roman","Serif";
+font-size: 75%;
+text-align: left;
+}
+
+.sepRow{
+background: #D2D2D2;font-size:  0px;margin-top: 0px;margin-bottom: 0px;padding-top: 0px;padding-bottom: 0px;
+height: 2px;
+}
+
+.cutline{
+background: #D2D2D2;margin-top: 0px;margin-bottom: 0px;padding-top: 0px;padding-bottom: 0px; font-size: 50%;text-align:left;
+height: auto;
+}
+
+.st{
+width:35%;
+}
+
+.ss{
+width:12%;
+}
+
+.sd{
+width:18%;
+}
+
+.sah{
+width:18%;
+}
+
+.sw{
+width:10%;
+ }
+ 
+.so{
+ width:54%;
+}
+
+
+
+@media (min-width: 360px) and (max-width:413px) { 
+/*        table{
+       font-size: 10.9px; 
+       } */
+       .bnr{
+       font-size: 200%;
+       }
+ } 
+ 
+ @media (min-width: 414px) and (max-width:479px) { 
+/*        table{
+       font-size: 12.9px; 
+       } */
+       .bnr{
+       font-size: 200%;
+       }
+ }
+ 
+ @media (min-width: 480px) and (max-width:567px) { 
+/*        table{
+       font-size: 14.9px; 
+       } */
+       .bnr{
+       font-size: 200%;
+       }  
+       
+       .conflst li{
+                -webkit-flex-basis:22%;
+                flex-basis:22%
+       }
+         
+       .conflst .c3{
+                -webkit-flex-basis:27%;
+                flex-basis:27%;
+       }  
+       
+       .conflst .c5{
+                -webkit-flex-basis:18%;
+                flex-basis:18%;
+       } 
+       
+       .conflst .c6{
+                -webkit-flex-basis:15%;
+                flex-basis:15%;
+       }                   
+ }
+ 
+ /* Iphone5 - 568 : IPAD Landscape   - 768px */
+ @media (min-width: 568px) and (max-width:767px) { 
+/*        table{
+       font-size: 16.0px; 
+       } */
+       .bnr{
+       font-size: 200%;
+       } 
+       
+
+       .conflst li{
+                -webkit-flex-basis:22%;
+                flex-basis:22%
+       }
+       
+       .conflst .c3{
+                -webkit-flex-basis:27%;
+                flex-basis:27%;
+       }  
+       
+       .conflst .c5{
+                -webkit-flex-basis:18%;
+                flex-basis:18%;
+       } 
+       
+       .conflst .c6{
+                -webkit-flex-basis:15%;
+                flex-basis:15%;
+       }                 
+ }
+ 
+ /* IPAD Portrait   - 768px - nav on left pane -  */
+@media (min-width: 768px) and (max-width:960px) { 
+
+       .bnr{
+       font-size: 200%;
+       }
+       
+       .hb{
+       display:none;
+       }
+              
+       
+       
+       body{
+            padding-right: .5em;
+            padding-left: .5em;       
+       }
+       
+       .description{
+            padding-left:0em;
+       }
+
+
+       header{
+            padding-left:0em;
+       }  
+       
+            
+
+       .description p{
+                    margin-left: 5%;
+                    margin-right:5%;
+       }
+       
+     
+          
+
+/*        table{
+       font-size: 16px; 
+//        border-collapse: separate; 
+          
+       } */
+       
+       ul{
+          padding-left:3.25rem;
+       } 
+       
+             .bsclst{
+margin-left:7%;
+} 
+
+    .description div{
+    
+         margin-left:5%;
+    
+    
+    } 
+    
+       .sepRow{
+               height: 1px;
+        }       
+       
+          
+       
+       td{
+       /* height: auto; */
+        padding: 2px;
+       }
+       
+       th{
+        padding: 2px;
+       }
+        
+        .tblteam{
+       /*  height: auto; */
+        padding-left:2px;
+        }        
+       
+       .mncntnt{
+       
+       margin:1px;
+       padding:.25em;       
+       
+       -webkit-order:2;
+       -webkit-flex-grow:1;
+       -webkit-flex-shrink:1;
+       -webkit-flex-basis:100%;
+       
+       order:2;
+       flex-grow:1;
+       flex-shrink:1;
+       flex-basis:100%;
+       }
+       
+       nav{
+
+       /* width:intial; */
+       
+       margin:1px;
+       padding:.5em;    
+       
+       font-size: 75%;
+      /*  line-height: 240%;  */
+       
+       -webkit-order:1;      
+       -webkit-flex-grow:0;
+       -webkit-flex-shrink:0;
+       -webkit-flex-basis:auto;
+       
+       
+       order:1;      
+       flex-grow:0;
+       flex-shrink:0;
+       flex-basis:auto;
+       }
+       
+       nav li{
+             /*height: 20px;  */
+             margin-bottom: 4px;
+       }       
+       
+       .flxbx2{
+       -webkit-flex-wrap: nowrap;
+       flex-wrap: nowrap;
+       }
+       
+       .conflst li{
+                -webkit-flex-basis:22%;
+                flex-basis:22%
+       }      
+       
+       .conflst .c3{
+                -webkit-flex-basis:27%;
+                flex-basis:27%;
+       }  
+       
+       .conflst .c5{
+                -webkit-flex-basis:18%;
+                flex-basis:18%;
+       } 
+       
+       .conflst .c6{
+                -webkit-flex-basis:15%;
+                flex-basis:15%;
+       }           
+       
+/*        .wide{
+        display:initial;
+       }
+       .narrow{
+        display:none;
+       } */
+ } 
+  /* End IPAD Portrait   - 768px - nav on left pane -  */
+ 
+
+ /* Total Desktop Mode - add wide mode - no table collapse*/
+@media print, (min-width: 960px) { 
+
+       body{
+            padding-right: 2em;
+            padding-left: 2em;       
+       }
+       
+       .description{
+            padding-left:0em;
+       }
+
+
+       header{
+            padding-left:0em;
+       }            
+       
+       .bnr{
+       font-size: 200%;
+       }  
+       
+       .hb{
+       display:none;
+       }
+              
+       
+       .description p{
+       margin-left: 5%;
+      margin-right:5%;
+      }
+      
+   
+            
+
+       ul{
+          padding-left:3.25rem;
+       }   
+       
+       
+       .bsclst{
+margin-left:7%;
+}   
+
+    .description div{
+    
+        margin-left:5%;
+    
+    
+    }
+       
+       
+
+       table{
+       /* font-size: 100%;  */
+       border-collapse: separate;
+          
+       }
+       
+       .sepRow{
+               height: 1px;
+        }       
+       
+       
+       td{
+        padding: 2px;
+/*          height: auto; */
+       }  
+       
+       th{
+        padding: 2px;
+       }             
+       
+        .tblteam{
+        /* height: auto; */
+        padding-left:2px;
+        }           
+       
+       .mncntnt{
+       
+       margin:1px;
+       padding:.25em;       
+       
+       -webkit-order:2;
+       -webkit-flex-grow:1;
+       -webkit-flex-shrink:1;
+       -webkit-flex-basis:100%;
+       
+       order:2;
+       flex-grow:1;
+       flex-shrink:1;
+       flex-basis: 100%;
+       }
+       
+       nav{
+
+       /* width:intial; */
+       
+       margin:1px;
+       padding:.5em;  
+       
+       
+       font-size: 75%;
+      /*  line-height: 240%;    */
+    
+       
+       -webkit-order:1;      
+       -webkit-flex-grow:0;
+       -webkit-flex-shrink:0;
+       -webkit-flex-basis:auto;
+       
+       
+       order:1;      
+       flex-grow:0;
+       flex-shrink:0;
+       flex-basis:auto;
+       }
+       
+       .flxbx2{
+       -webkit-flex-wrap: nowrap;
+       flex-wrap: nowrap;
+       }
+       
+       .wide{
+        display:inline;
+       }
+       .narrow{
+        display:none;
+       }
+       
+       nav li{
+             /*height: 20px;  */
+             margin-bottom: 4px;
+       } 
+        .conflst li{
+                -webkit-flex-basis:22%;
+                flex-basis:22%
+       }   
+       
+       
+
+       
+/*       .conflst li .wwc{
+                -webkit-flex-basis:27%;
+                flex-basis:27%;
+                border:1px, solid, red;
+       } 
+        */
+       
+       
+       .conflst .c3{
+                -webkit-flex-basis:27%;
+                flex-basis:27%;
+       }  
+       
+       .conflst .c5{
+                -webkit-flex-basis:18%;
+                flex-basis:18%;
+       } 
+       
+       .conflst .c6{
+                -webkit-flex-basis:15%;
+                flex-basis:15%;
+       }                    
+ }
+ 
+ /* Total Desktop Mode - add wide mode - no table collapse*/ 
+ 
+ 
+ @media print{
+ nav{
+ display:none;
+ }
+ 
+ }
+</style>
+
+
+
+    <title>2016 NHL Post Season Probabilities</title>
+
+    <meta name="description" content="The 2016 NHL Post Season Probabilities table presents the probabilities that your team will proceed to different playoff rounds.">
+    <meta name="keywords" content="NHL, Hockey, Playoff Picture, Playoff Status, Playoff Standings, 2016, Playoff Probabilities">
+	
+	
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+	<script src="../scripts/basic.js" async></script>
+	
+	<script>
+  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  	ga('create', 'UA-68404940-1', 'auto');
+  	ga('send', 'pageview');
+
+	</script>	
+		
+ </head>
+
+<body>
+  
+<header>  
+  
+<p id="top" class="bnr"><a href="../index.html">PlayoffStatus.com</a><span class="hb"><a href="#snav"><b><span style="position:relative; font-size:85%; top:-.35em;">darr;</span><span style="position:relative; font-size:110%; top:-.15em;">equiv;</span></b></a></span></p>
+		
+<div class="flxbx1">
+	<div class="breadcrumbs">
+    				<a href="../index.html">Home</a>
+					<a href="nhl.html">gt;NHL</a><a  href="nhlpostseasonprob.html">gt;NHL Post Season Probabilities</a>
+	</div>
+	
+				
+
+	<div class="datetime">
+		Mon May#160;2 11:30#160;pm
+	</div>
+</div>
+
+<hr>
+</header>
+
+<div class="description">	
+	<h2 class="wkinfo">NHL - Regular Season Complete</h2> 
+	
+<h1>NHL Post Season Probabilities</h1>
+<p>How far is your team going to proceed into the playoffs?  The NHL Post Season Probabilities table presents the probabilities that your team will proceed to different playoff rounds. All future unplayed games are assumed won/lost with a probability based upon relative team strengths. Click a team name to proceed to the team playoff picture page.</p>
+</div>
+
+
+<div class="flxbx2" id="sflx">
+
+          <nav id="snav">
+
+
+<br>
+					<div style="position:relative;"><b>Site Navigation</b><span class="hb"><a href="#top"><b><span style="position:relative; font-size:85%; top:-.75em;">uarr;</span><span style="position:relative; font-size:110%; top:-.45em;">equiv;</span></b></a></span></div>
+					<br>
+					<ul>
+					
+					
+					 <li><a href="nhl.html">NHL Home</a></li>
+					 <li><a href="nhlschedule.html">NHL Schedule</a></li>
+					 <li><a href="nhlplayoffschedule.html">NHL Playoff Schedule<span style="color:#FF0000;"><sup> Postseasonnbsp;Content</sup></span></a></li>
+					 <li class="libreak">gt;Post Season Probabilities<span style="color:#FF0000;"><sup> Postseasonnbsp;Content</sup></span></li>
+					  
+					
+					 <li><a href="../index.html">PlayoffStatus.com Home</a></li>
+					 
+					 </ul>
+					 
+
+					<br><br><br><br><br>
+					 <span style="font-size: smaller;color: #969696;"> Data may change several<br> times on day of play<br>Bookmark site for easy return</span>			 							
+      				 										
+           			 
+          </nav>
+
+<div class="mncntnt" style="font-size:16px;">
+            
+			<table>
+				<caption>NHL Post Season Probabilities</caption>			
+                <tr>
+                  <th colspan="2"> </th>
+                 								
+                  <th colspan="4">Record </th>
+				  <th rowspan="2">Current Series</th>
+                  <th rowspan="2">Stanley Cup Winners</th>
+                  <th rowspan="2">Stanley Cup</th>
+                  <th rowspan="2"><span class="wide">Conference Championship </span><span class="narrow">Conf Series</span></th>
+                  <th rowspan="2">Round 2</th>
+                  <th rowspan="2">Round 1</th>
+				  
+				  
+				  
+				
+                </tr>
+
+                <tr>
+                  <th style="text-align:left;">Team</th>
+									<th><span class="wide">Conference </span><span class="narrow">Conf</span></th>
+
+                  <th>W</th>
+									<th>L</th>
+									<th>OTL</th>
+									<th>Pts</th>
+									
+																	
+                </tr>
+								
+									
+
+                <tr>
+                  <td class="tblteam"><a href="capitalsstandings.html">Capitals</a></td>
+									<td><span class="wide">Eastern </span><span class="narrow">East</span></td>									
+                  <td>56</td>
+                  <td>18</td>
+				  <td>8</td>
+				  <td>120</td>
+				  <td>1#8209;2</td>
+                  <td><span style="color:#008000;">25%</span></td>
+                  <td><span style="color:#008000;">30%</span></td>
+                  <td><span style="color:#008000;">41%</span></td>
+                  <td><span style="color:#008000;">100%</span></td>
+                  <td><span style="color:#008000;">^</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="penguinsstandings.html">Penguins</a></td>
+									<td><span class="wide">Eastern </span><span class="narrow">East</span></td>									
+                  <td>48</td>
+                  <td>26</td>
+				  <td>8</td>
+				  <td>104</td>
+				  <td>2#8209;1</td>
+                  <td><span style="color:#008000;">17%</span></td>
+                  <td><span style="color:#008000;">36%</span></td>
+                  <td><span style="color:#008000;">59%</span></td>
+                  <td><span style="color:#008000;">100%</span></td>
+                  <td><span style="color:#008000;">^</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="starsstandings.html">Stars</a></td>
+									<td><span class="wide">Western </span><span class="narrow">West</span></td>									
+                  <td>50</td>
+                  <td>23</td>
+				  <td>9</td>
+				  <td>109</td>
+				  <td>1#8209;1</td>
+                  <td><span style="color:#008000;">17%</span></td>
+                  <td><span style="color:#008000;">29%</span></td>
+                  <td><span style="color:#008000;">50%</span></td>
+                  <td><span style="color:#008000;">100%</span></td>
+                  <td><span style="color:#008000;">^</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="bluesstandings.html">Blues</a></td>
+									<td><span class="wide">Western </span><span class="narrow">West</span></td>									
+                  <td>49</td>
+                  <td>24</td>
+				  <td>9</td>
+				  <td>107</td>
+				  <td>1#8209;1</td>
+                  <td><span style="color:#008000;">17%</span></td>
+                  <td><span style="color:#008000;">28%</span></td>
+                  <td><span style="color:#008000;">50%</span></td>
+                  <td><span style="color:#008000;">100%</span></td>
+                  <td><span style="color:#008000;">^</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="sharksstandings.html">Sharks</a></td>
+									<td><span class="wide">Western </span><span class="narrow">West</span></td>									
+                  <td>46</td>
+                  <td>30</td>
+				  <td>6</td>
+				  <td>98</td>
+				  <td>2#8209;0</td>
+                  <td><span style="color:#008000;">12%</span></td>
+                  <td><span style="color:#008000;">39%</span></td>
+                  <td><span style="color:#008000;">88%</span></td>
+                  <td><span style="color:#008000;">100%</span></td>
+                  <td><span style="color:#008000;">^</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="islandersstandings.html">Islanders</a></td>
+									<td><span class="wide">Eastern </span><span class="narrow">East</span></td>									
+                  <td>45</td>
+                  <td>27</td>
+				  <td>10</td>
+				  <td>100</td>
+				  <td>1#8209;1</td>
+                  <td><span style="color:#008000;">7%</span></td>
+                  <td><span style="color:#008000;">17%</span></td>
+                  <td><span style="color:#008000;">50%</span></td>
+                  <td><span style="color:#008000;">100%</span></td>
+                  <td><span style="color:#008000;">^</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="lightningstandings.html">Lightning</a></td>
+									<td><span class="wide">Eastern </span><span class="narrow">East</span></td>									
+                  <td>46</td>
+                  <td>31</td>
+				  <td>5</td>
+				  <td>97</td>
+				  <td>1#8209;1</td>
+                  <td><span style="color:#008000;">4%</span></td>
+                  <td><span style="color:#008000;">18%</span></td>
+                  <td><span style="color:#008000;">50%</span></td>
+                  <td><span style="color:#008000;">100%</span></td>
+                  <td><span style="color:#008000;">^</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="predatorsstandings.html">Predators</a></td>
+									<td><span class="wide">Western </span><span class="narrow">West</span></td>									
+                  <td>41</td>
+                  <td>27</td>
+				  <td>14</td>
+				  <td>96</td>
+				  <td>0#8209;2</td>
+                  <td><span style="color:#008000;">lt;1%</span></td>
+                  <td><span style="color:#008000;">4%</span></td>
+                  <td><span style="color:#008000;">12%</span></td>
+                  <td><span style="color:#008000;">100%</span></td>
+                  <td><span style="color:#008000;">^</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="blackhawksstandings.html">Blackhawks</a></td>
+									<td><span class="wide">Western </span><span class="narrow">West</span></td>									
+                  <td>47</td>
+                  <td>26</td>
+				  <td>9</td>
+				  <td>103</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#008000;">100%</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="ducksstandings.html">Ducks</a></td>
+									<td><span class="wide">Western </span><span class="narrow">West</span></td>									
+                  <td>46</td>
+                  <td>25</td>
+				  <td>11</td>
+				  <td>103</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#008000;">100%</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="panthersstandings.html">Panthers</a></td>
+									<td><span class="wide">Eastern </span><span class="narrow">East</span></td>									
+                  <td>47</td>
+                  <td>26</td>
+				  <td>9</td>
+				  <td>103</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#008000;">100%</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="kingsstandings.html">Kings</a></td>
+									<td><span class="wide">Western </span><span class="narrow">West</span></td>									
+                  <td>48</td>
+                  <td>28</td>
+				  <td>6</td>
+				  <td>102</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#008000;">100%</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="rangersstandings.html">Rangers</a></td>
+									<td><span class="wide">Eastern </span><span class="narrow">East</span></td>									
+                  <td>46</td>
+                  <td>27</td>
+				  <td>9</td>
+				  <td>101</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#008000;">100%</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="flyersstandings.html">Flyers</a></td>
+									<td><span class="wide">Eastern </span><span class="narrow">East</span></td>									
+                  <td>41</td>
+                  <td>27</td>
+				  <td>14</td>
+				  <td>96</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#008000;">100%</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="redwingsstandings.html">Red Wings</a></td>
+									<td><span class="wide">Eastern </span><span class="narrow">East</span></td>									
+                  <td>41</td>
+                  <td>30</td>
+				  <td>11</td>
+				  <td>93</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#008000;">100%</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="wildstandings.html">Wild</a></td>
+									<td><span class="wide">Western </span><span class="narrow">West</span></td>									
+                  <td>38</td>
+                  <td>33</td>
+				  <td>11</td>
+				  <td>87</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#008000;">100%</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="bruinsstandings.html">Bruins</a></td>
+									<td><span class="wide">Eastern </span><span class="narrow">East</span></td>									
+                  <td>42</td>
+                  <td>31</td>
+				  <td>9</td>
+				  <td>93</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="hurricanesstandings.html">Hurricanes</a></td>
+									<td><span class="wide">Eastern </span><span class="narrow">East</span></td>									
+                  <td>35</td>
+                  <td>31</td>
+				  <td>16</td>
+				  <td>86</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="senatorsstandings.html">Senators</a></td>
+									<td><span class="wide">Eastern </span><span class="narrow">East</span></td>									
+                  <td>38</td>
+                  <td>35</td>
+				  <td>9</td>
+				  <td>85</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="devilsstandings.html">Devils</a></td>
+									<td><span class="wide">Eastern </span><span class="narrow">East</span></td>									
+                  <td>38</td>
+                  <td>36</td>
+				  <td>8</td>
+				  <td>84</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="avalanchestandings.html">Avalanche</a></td>
+									<td><span class="wide">Western </span><span class="narrow">West</span></td>									
+                  <td>39</td>
+                  <td>39</td>
+				  <td>4</td>
+				  <td>82</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="canadiensstandings.html">Canadiens</a></td>
+									<td><span class="wide">Eastern </span><span class="narrow">East</span></td>									
+                  <td>38</td>
+                  <td>38</td>
+				  <td>6</td>
+				  <td>82</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="sabresstandings.html">Sabres</a></td>
+									<td><span class="wide">Eastern </span><span class="narrow">East</span></td>									
+                  <td>35</td>
+                  <td>36</td>
+				  <td>11</td>
+				  <td>81</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="coyotesstandings.html">Coyotes</a></td>
+									<td><span class="wide">Western </span><span class="narrow">West</span></td>									
+                  <td>35</td>
+                  <td>39</td>
+				  <td>8</td>
+				  <td>78</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="jetsstandings.html">Jets</a></td>
+									<td><span class="wide">Western </span><span class="narrow">West</span></td>									
+                  <td>35</td>
+                  <td>39</td>
+				  <td>8</td>
+				  <td>78</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="flamesstandings.html">Flames</a></td>
+									<td><span class="wide">Western </span><span class="narrow">West</span></td>									
+                  <td>35</td>
+                  <td>40</td>
+				  <td>7</td>
+				  <td>77</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="bluejacketsstandings.html">Blue Jackets</a></td>
+									<td><span class="wide">Eastern </span><span class="narrow">East</span></td>									
+                  <td>34</td>
+                  <td>40</td>
+				  <td>8</td>
+				  <td>76</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="canucksstandings.html">Canucks</a></td>
+									<td><span class="wide">Western </span><span class="narrow">West</span></td>									
+                  <td>31</td>
+                  <td>38</td>
+				  <td>13</td>
+				  <td>75</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="oilersstandings.html">Oilers</a></td>
+									<td><span class="wide">Western </span><span class="narrow">West</span></td>									
+                  <td>31</td>
+                  <td>43</td>
+				  <td>8</td>
+				  <td>70</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  			  				  								
+                </tr>
+									
+
+                <tr>
+                  <td class="tblteam"><a href="mapleleafsstandings.html">Maple Leafs</a></td>
+									<td><span class="wide">Eastern </span><span class="narrow">East</span></td>									
+                  <td>29</td>
+                  <td>42</td>
+				  <td>11</td>
+				  <td>69</td>
+				  <td>nbsp;</td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  <td><span style="color:#FF0000;">X</span></td>
+                  			  				  								
+                </tr>
+									
+								
+          
+              </table>
+							<div class="notes">
+							<ul>
+    							<li style="list-style-type: none"><strong>Notes</strong></li>
+   								 <li><span style="color:#008000;">^</span> means the team has already proceeded to the next playoff round</li>
+								 <li><span style="color:#FF0000;">X</span> means the team did not proceed to this playoff round</li>
+    							 <li><span style="color:#008000;">50%</span> - probability the team will proceed to this playoff round - green number indicates the team controls its destiny for this spot</li>
+    							 <li><span style="color:#FF0000;">50%</span> - probability the team will proceed to this playoff round - red number indicates the team does not control its destiny for this spot</li>									 
+							</ul>
+							</div>			
+
+</div>
+
+</div>
+
+
+<footer>
+	      <hr>
+		  <address><a href="mailto:contact@playoffstatus.com">Contact Us</a></address>Copyright copy; 2016 All Rights Reserved
+</footer>    
+
+
+
+  
+    
+  </body>
+</html>
+
